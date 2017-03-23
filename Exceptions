@@ -1,0 +1,30 @@
+
+a) What is null pointer Exception?
+	Null ponter Exception Thrown when an application attempts to use null in a case where an object is required.
+    these includes :
+	--Calling the instance method of a null object.
+	--Accessing or modifying the field of a null object.
+	--Taking the length of null as if it were an array.
+	--Accessing or modifying the slots of null as if it were an array.
+	--Throwing null as if it were a Throwable value.
+
+b) When “Unable to add window to Activity…. Is your Activity running”
+   error occurs?
+	This exception occurs when the app is trying to notify the user from the background thread (AsyncTask) by opening a Dialog.
+
+c) What is ArrayIndexOutOfBound Exception?
+	ArrayIndexOutOfBound Exception Thrown to indicate that an array has been accessed with an illegal index. 
+	The index is either negative or greater than or equal to the size of the array.
+
+d) “Activity not found? Have you declared this activity in your manifest
+   file”?
+	Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. 
+	The manifest file provides essential information about your app to the Android system, 
+	which the system must have before it can run any of the app's code.
+	so if we dont mention our activity name in manifest file we will get this error.
+
+e) No such method getColor() found?	
+	The old method is deprecated starting in API 23, and the new method only exists in API 23+. 
+	If we try to attempt to call the new method on a device running API <23 we will get this error.
+	we can either perform an API level check and call the appropriate method, 
+	or we can use ContextCompat.getColor(Context, int) from the support-v4 library.
